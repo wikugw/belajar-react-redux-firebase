@@ -19,11 +19,13 @@ const SignedInLink = (props) => {
         <a href="#" onClick={handleClick} to="/">Log Out</a>
       </li>
       <li>
-        <NavLink to="/" className="btn btn-floating pink lighten-1">NN</NavLink>
+        <NavLink to="/" className="btn btn-floating pink lighten-1">{props.profile.initials}</NavLink>
       </li>
     </ul>
   )
 }
+
+
 
 const mapDispatchToProps = (dispatch) => {
   return {
